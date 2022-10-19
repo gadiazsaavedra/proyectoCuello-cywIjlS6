@@ -25,3 +25,14 @@ def hoy(request: bool) -> HttpResponse:
         HttpResponse: _description_
     """
     return HttpResponse(f"Hoy es : {datetime.now()}")
+
+def saludo_nombre(request: bool, nombre: str) -> HttpResponse:
+    """_summary_
+
+    Args:
+        request (bool): _description_
+
+    Returns:
+        HttpResponse: _description_
+    """
+    return HttpResponse(f"mi nombre es : {nombre}")
