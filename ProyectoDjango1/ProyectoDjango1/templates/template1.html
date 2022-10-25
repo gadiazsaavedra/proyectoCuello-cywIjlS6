@@ -10,5 +10,13 @@
     <h1>Primer template</h1>
     <p>This my first template is</p>
     <h5>Creado por {{my_name}}</h5>
+    <ul>
+        {% for nota in notas %}
+            <li>
+                {{nota}}
+            </li>    
+        {% endfor %}
+    </ul>
+    
 </body>
 </html>

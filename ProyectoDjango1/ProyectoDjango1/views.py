@@ -53,4 +53,4 @@ def saludo_template(request: bool, nombre) -> HttpResponse:
         plantilla = Template(miHtml.read())
     # mi_contexto = Context()
     # documento = plantilla.render(mi_contexto)
-    return HttpResponse(plantilla.render(Context({'my_name': nombre})))
+    return HttpResponse(plantilla.render(Context({'my_name': nombre, 'notas': [8, 5, 9, 10]})))
