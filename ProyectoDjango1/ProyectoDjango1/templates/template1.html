@@ -12,9 +12,16 @@
     <h5>Creado por {{my_name}}</h5>
     <ul>
         {% for nota in notas %}
-            <li>
-                {{nota}}
-            </li>    
+            {% if nota >= 6 %}
+                <li style="color: green;">
+                    {{nota}} - Aprobado
+                </li>
+            {%else%}
+                <li style="color: rgb(224, 16, 44);">
+                    {{nota}} - Desaprobado
+                </li>    
+            {%endif%}
+                
         {% endfor %}
     </ul>
     
